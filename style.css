@@ -15,10 +15,6 @@ html{
     font-size: 62.5%;
 }
 
-body{
-    text-align: center;
-}
-
 .bg{
     width: 100%;
     height: 28rem;
@@ -44,10 +40,12 @@ main{
 .main-title{
     margin: 10rem 0 2rem;
     color:hsl(227, 35%, 25%);
+    text-align: center;
 }
 
 .main-paragraph{
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .card{
@@ -199,13 +197,18 @@ input:checked + .slider:before {
     height: 4rem;
     width: 4rem;
     background: url("images/icon-slider.svg") center / contain no-repeat;
-    background-size: 3rem;
+    background-size: 2.5rem;
     background-color:hsl(174, 86%, 45%);
     border-radius: 50%;
     cursor: ew-resize;
+    transition: 0.4s;
+    -webkit-box-shadow: -1px 14px 21px 8px rgba(16,213,194,0.38); 
+box-shadow: -1px 14px 21px 8px rgba(16,213,194,0.38);
 }
 
-
+.slider-bar input::-webkit-slider-thumb:hover{
+    background-color:hsl(174, 77%, 80%);
+}
 
 .slider-bar input::-moz-range-progress, .slider-bar input::-ms-fill-lower{
     background-color:hsl(174, 86%, 45%);
